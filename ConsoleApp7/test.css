@@ -1,0 +1,67 @@
+﻿@font-face {
+    font-family: 'Noto';
+    font-style: normal;
+    font-weight: 400;
+    src: url(Font/NotoSansAvestan-Regular.eot);
+    src: url(Font/NotoSansAvestan-Regular.eot?#iefix) format('embedded-opentype'), url(Font/NotoSansAvestan-Regular.woff2) format('woff2'), url(Font/NotoSansAvestan-Regular.woff) format('woff'), url(Font/NotoSansAvestan-Regular.ttf) format('truetype');
+}
+
+.notice-block {
+    border: 1px solid #000;
+    padding: 20px;
+    letter-spacing: 1px;
+    font-family: 'Noto', sans-serif;
+}
+
+    .notice-block h3 {
+        margin-top: 0;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .notice-block .form-style {
+        list-style: none;
+        padding-left: 0;
+    }
+
+        .notice-block .form-style li {
+            display: flex;
+        }
+
+            .notice-block .form-style li .title {
+                display: inline-block;
+                width: 13em;
+                text-align: right;
+                margin-right: 5px;
+            }
+
+                .notice-block .form-style li .title:after {
+                    content: '：';
+                }
+
+            .notice-block .form-style li span:last-child {
+                width: 20em;
+                border-bottom: 1px solid #000;
+                display: inline-block;
+            }
+
+    .notice-block .ps-txt {
+        position: relative;
+        padding-left: 1.2rem;
+    }
+
+        .notice-block .ps-txt:before {
+            content: '※';
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+    .notice-block ul {
+        list-style: decimal;
+    }
+
+    .notice-block .foot-txt {
+        text-align: right;
+    }
+

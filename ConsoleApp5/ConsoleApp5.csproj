@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MailKit" Version="2.13.0" />
+    <PackageReference Include="Polly" Version="7.2.2" />
+    <PackageReference Include="Syncfusion.Pdf.Net.Core" Version="19.2.0.48" />
+  </ItemGroup>
+
+</Project>
