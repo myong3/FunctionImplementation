@@ -5,7 +5,7 @@ namespace ConsoleApp4
     class Program
     {
         /// <summary>
-        /// 測試  C# 7.0 區域函式
+        /// 測試  C# 7.0 區域函式(local Functions)
         /// </summary>
         /// <param name="args"></param>
         static void Main(string[] args)

@@ -12,6 +12,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp5
 {
+    /// <summary>
+    /// Polly Retry 
+    /// </summary>
     class Program
     {
         static async Task Main(string[] args)
