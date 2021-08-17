@@ -13,28 +13,9 @@ namespace ConsoleApp7
         /// <param name="args"></param>
         static void Main(string[] args)
         {
-            Stream res = new MemoryStream();
             try
             {
                 var fORMATTED_TIME = DateTime.Now.ToString("yyyy/MM/dd HH:mm:ss");
-
-                //var type = "網路郵局及e動郵局";
-                //var tmp = System.Text.Encoding.Default.GetBytes(type).Length - type.Length;
-                //var f_type = type.PadRight(30 - tmp / 2, '　');
-
-                //var bankFullName = "700 - 中華郵政";
-                //var tmp2 = System.Text.Encoding.Default.GetBytes(bankFullName).Length - bankFullName.Length;
-                //var f_bankFullName = bankFullName.PadRight(30 - tmp2 / 2, '　');
-
-                //var trfeeActNo = "12345678901234";
-                //var tmp3 = System.Text.Encoding.Default.GetBytes(trfeeActNo).Length - trfeeActNo.Length;
-                //var f_trfeeActNo = trfeeActNo.PadRight(30 - tmp3 / 2, '　');
-
-                //var nickName = "我的別名";
-                //var tmp4 = System.Text.Encoding.Default.GetBytes(nickName).Length - nickName.Length;
-                //var f_nickName = nickName.PadRight(30 - tmp4 / 2, '　');
-
-                var f_type = "網路郵局及e動郵局";
                 var f_bankFullName = "700 - 中華郵政";
                 var f_trfeeActNo = "12345678901234";
                 var f_nickName = "我的別名";
