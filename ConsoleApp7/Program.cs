@@ -1,7 +1,6 @@
-﻿using DinkToPdf;
-using DinkToPdf.Contracts;
-using System;
+﻿using System;
 using System.IO;
+using WkHtmlToPdfDotNet;
 
 namespace ConsoleApp7
 {
@@ -22,7 +21,7 @@ namespace ConsoleApp7
 
                 string relativePath = "./Font/";
                 string contentRootPath = "C:/Users/myong/source/repos/ConsoleApp2/ConsoleApp7";
-                string fullcontentRootPath = Path.GetFullPath(relativePath, contentRootPath).Replace('\\', '/');
+                string fullcontentRootPath = Path.GetFullPath(relativePath, contentRootPath);
 
 
                 string content = @"
@@ -31,12 +30,12 @@ namespace ConsoleApp7
                   font-family: 'Noto';
                   font-style: normal;
                   font-weight: 400;
-                  src: url(" + fullcontentRootPath + @"NotoSansAvestan-Regular.eot);
-                  src: url(" + fullcontentRootPath + @"NotoSansAvestan-Regular.eot?#iefix) format('embedded-opentype'),
-                       url(" + fullcontentRootPath + @"NotoSansAvestan-Regular.woff2) format('woff2'),
-                       url(" + fullcontentRootPath + @"NotoSansAvestan-Regular.woff) format('woff'),
-                       url(" + fullcontentRootPath + @"NotoSansAvestan-Regular.ttf) format('truetype');
-                }
+                  src: url(data:" + fullcontentRootPath + @"NotoSansAvestan-Regular.eot);
+                  src: url(data:" + fullcontentRootPath + @"NotoSansAvestan-Regular.eot?#iefix) format('embedded-opentype'),
+                       url(data:" + fullcontentRootPath + @"NotoSansAvestan-Regular.woff2) format('woff2'),
+                       url(data:" + fullcontentRootPath + @"NotoSansAvestan-Regular.woff) format('woff'),
+                       url(data:" + fullcontentRootPath + @"NotoSansAvestan-Regular.ttf) format('truetype');
+             }
                 .notice-block {
                   border: 1px solid #000;
                   padding: 20px;
